@@ -1,5 +1,8 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
+  <img
+    alt="Vue logo"
+    src="./assets/logo.png"
+  >
   <HelloWorld msg="Hello Vue 3.0 + Vite" />
 </template>
 
@@ -18,7 +21,8 @@ export default {
   },
   methods: {
     changeMsg() {
-        console.log('changeMsg')
+      var a = 123
+        console.log('changeMsg',a)
       this.msg = 'Hello Vue 3.0 + Vite + TypeScript'
     }
   }
