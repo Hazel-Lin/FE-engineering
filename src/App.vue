@@ -10,21 +10,21 @@
 import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',    
-  components: { 
-    HelloWorld
+  name: 'App', 
+  components: {
+    HelloWorld,
   },
   data() {
-         return {
-      msg: 'Hello Vue 3.0 + Vite'
+    return {
+       msg: 'Hello Vue 3.0 + Vite',
     }
   },
   methods: {
     changeMsg() {
       var a = 123
-        console.log('changeMsg',a)
+      console.log('changeMsg', a)
       this.msg = 'Hello Vue 3.0 + Vite + TypeScript'
-    }
-  }
+    },
+  },
 }
 </script>

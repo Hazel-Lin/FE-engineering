@@ -4,7 +4,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "lint": "eslint --c .js,.vue src",
+    "lint:fix": "eslint --ext .js,.vue src --fix",
+    "format": "prettier --write --cache .",
+    "format-check": "prettier --check --cache ."
   },
   "dependencies": {
     "vue": "^3.0.4"
@@ -18,6 +22,7 @@
     "eslint-define-config": "^2.1.0",
     "eslint-plugin-vue": "^9.25.0",
     "globals": "^15.1.0",
+    "prettier": "3.2.5",
     "vite": "^1.0.0-rc.13",
     "vue-eslint-parser": "^9.4.2"
   }
